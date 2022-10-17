@@ -9,7 +9,7 @@ export default function NavBar() {
             <ul className="navbar-nav">
                 <li className="nav-item">
                     {/* PROPERTY BINDING */}
-                    <img src={logo} style={{height:50,width:50,padding:10}}></img>
+                    <img src={logo} style={{ height: 50, width: 50, padding: 10 }}></img>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="funcom">Functional Component</Link>
@@ -17,7 +17,12 @@ export default function NavBar() {
                 <li className="nav-item">
                     <Link className="nav-link" to="classcom">Class Component</Link>
                 </li>
-
+                <li className="nav-item">
+                    <Link className="nav-link" to="props">Props</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="map">Map elements from array</Link>
+                </li>
             </ul>
         </nav>
     )
