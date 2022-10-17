@@ -23,6 +23,12 @@ export default function NavBar() {
                 <li className="nav-item">
                     <Link className="nav-link" to="map">Map elements from array</Link>
                 </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="lifecycle">Lifecycle</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="spreadsyntax">Spread Operator</Link>
+                </li>
             </ul>
         </nav>
     )

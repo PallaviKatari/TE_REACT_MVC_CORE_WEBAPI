@@ -13,6 +13,10 @@ import Emp from './Components/Props';
 import Fetch_empdetails from './Components/Map';
 //Hooks
 import UserDetails from './Components/Hook';
+//LifeCycle
+import LifeCycle from './Components/LifeCycle';
+//Spread Syntax
+import SpreadSyntax from './Components/SpreadSyntax';
 //Configure the routing paths 
 import { Route,Routes } from 'react-router-dom';
 
@@ -26,6 +30,8 @@ function App() {
       <Route path="funcom" element={<FuncComp/>}></Route>
       <Route path="classcom" element={<ClassComp/>}></Route>
       <Route path="map" element={<Fetch_empdetails/>}></Route>
+      <Route path="lifecycle" element={<LifeCycle/>}></Route>
+      <Route path="spreadsyntax" element={<SpreadSyntax/>}></Route>
       <Route path="props" element={<Emp empname="John" empid="100" empdesignation="Admin"></Emp>}></Route>
       <Route path="*" element={<PageNotFound/>}></Route>
      </Routes>
