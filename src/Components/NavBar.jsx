@@ -12,7 +12,7 @@ export default function NavBar() {
                     <img src={logo} style={{ height: 50, width: 50, padding: 10 }}></img>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="funcom">Functional Component</Link>
+                    <Link className="nav-link" to="">Functional Component</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="classcom">Class Component</Link>
@@ -28,6 +28,15 @@ export default function NavBar() {
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="spreadsyntax">Spread Operator</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="toggle">Toggle</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="rooks">Rooks</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="fetch">Fetch API</Link>
                 </li>
             </ul>
         </nav>
