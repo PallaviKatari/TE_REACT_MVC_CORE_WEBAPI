@@ -31,6 +31,7 @@ import HookForm from './Components/ReactHookForm';
 import Footer from './Components/Axios';
 //Axios with async and await
 import AxiosAwaitAsync from './Components/AxiosAwaitAsync';
+import GetCoreAPI from './Components/AxiosCoreAPI';
 //Configure the routing paths 
 import { Route,Routes } from 'react-router-dom';
 
@@ -51,12 +52,13 @@ function App() {
       <Route path="fetch" element={<FetchAPI/>}></Route>
       <Route path="form" element={<FormValidator/>}></Route>
       <Route path="hookform" element={<HookForm/>}></Route>
+      <Route path="getapi" element={<GetCoreAPI/>}></Route>
       <Route path="props" element={<Emp empname="John" empid="100" empdesignation="Admin"></Emp>}></Route>
       <Route path="*" element={<PageNotFound/>}></Route>
      </Routes>
      {/* <AxiosAwaitAsync/> */}
      <footer>
-      <nav className='navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-bottom' style={{marginTop:500}}>
+      <nav className='navbar fixed-bottom navbar-light bg-light' style={{marginTop:100}}>
         <Footer/>
       </nav>
      </footer>

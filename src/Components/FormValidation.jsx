@@ -92,7 +92,7 @@ export default class FormValidator extends Component {
 
         return (
             <div style={{ marginTop: 100 }}>
-                <div className="card mt-5">
+                <div className="card mt-5" style={{border:"none"}}>
                     <form className="card-body" onSubmit={this.onFormSubmit}>
 
                         <div className="form-group mb-3">

@@ -44,6 +44,9 @@ export default function NavBar() {
                 <li className="nav-item">
                     <Link className="nav-link" to="hookform">React HookForm</Link>
                 </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="getapi">.NET API</Link>
+                </li>
             </ul>
         </nav>
     )
