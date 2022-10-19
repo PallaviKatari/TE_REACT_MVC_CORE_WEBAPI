@@ -23,6 +23,14 @@ import Toggle from './Components/Toggle';
 import Rooks from './Components/Rooks';
 //Fetch API
 import FetchAPI from './Components/FetchAPI';
+//Form Validator
+import FormValidator from './Components/FormValidation';
+//React HookForm
+import HookForm from './Components/ReactHookForm';
+//Axios Demo
+import Footer from './Components/Axios';
+//Axios with async and await
+import AxiosAwaitAsync from './Components/AxiosAwaitAsync';
 //Configure the routing paths 
 import { Route,Routes } from 'react-router-dom';
 
@@ -30,6 +38,7 @@ function App() {
   return (
     <div>
       <NavBar/>
+      <AxiosAwaitAsync/>
       <UserDetails/>
       {/* Welcome to Online Training : <Emp empname="John"></Emp> */}
      <Routes>
@@ -41,9 +50,16 @@ function App() {
       <Route path="toggle" element={<Toggle/>}></Route>
       <Route path="rooks" element={<Rooks/>}></Route>
       <Route path="fetch" element={<FetchAPI/>}></Route>
+      <Route path="form" element={<FormValidator/>}></Route>
+      <Route path="hookform" element={<HookForm/>}></Route>
       <Route path="props" element={<Emp empname="John" empid="100" empdesignation="Admin"></Emp>}></Route>
       <Route path="*" element={<PageNotFound/>}></Route>
      </Routes>
+     <footer>
+      <nav className='navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-bottom' style={{marginTop:500}}>
+        <Footer/>
+      </nav>
+     </footer>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function NavBar() {
             <ul className="navbar-nav">
                 <li className="nav-item">
                     {/* PROPERTY BINDING */}
-                    <img src={logo} style={{ height: 50, width: 50, padding: 10 }}></img>
+                    <img alt="logo" src={logo} style={{ height: 50, width: 50, padding: 10 }}></img>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="">Functional Component</Link>
@@ -37,6 +37,12 @@ export default function NavBar() {
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="fetch">Fetch API</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="form">Form Validation</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="hookform">React HookForm</Link>
                 </li>
             </ul>
         </nav>
