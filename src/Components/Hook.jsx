@@ -21,7 +21,7 @@ export default function UserDetails(){
 function ChangeName(props){
     return(
         <>
-        <button onClick={()=> props.ChangeText(" Johnny")}>Click to change the name</button>
+        <button onClick={()=> props.ChangeText(" Johnny")} style={{borderStyle:"solid",borderRadius:10,borderColor:"blueviolet",backgroundColor:"beige"}}>Click to change the name</button>
         </>
     )
 }

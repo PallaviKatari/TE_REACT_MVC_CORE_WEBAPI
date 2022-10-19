@@ -35,14 +35,15 @@ function Fetch_empdetails()
     {empdetails.filter(emp=>emp.length==5).map(
         empname=>
         (
-            <h3 key={empname.index}>
+            <h3 key={empname.index} style={{textAlign:"center"}}>
                 Employee Name : {empname}
             </h3>
         )
 
     )}
-    <br>
-    </br>
+    <br></br>
+    <hr>
+    </hr>
     <Fetch_depdetails></Fetch_depdetails>
     </>
     )
@@ -58,7 +59,7 @@ function Fetch_depdetails()
     {depdetails.map(
         depname=>
         (
-            <h3 key={depname.id}>
+            <h3 key={depname.id} style={{textAlign:"center"}}>
                 Department Name : {depname.name}
             </h3>
         )

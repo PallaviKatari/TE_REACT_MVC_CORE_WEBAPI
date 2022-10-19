@@ -23,8 +23,8 @@ export default class LifeCycle extends React.Component{
     {
         return(
             <>
-            <h3>Course Name:{this.state.course}</h3>
-            <a onClick={this.changeState.bind(this)}>Change State</a>
+            <h3 style={{textAlign:"center"}}>Course Name:{this.state.course} - <a onClick={this.changeState.bind(this)}>Click me to Change the State</a></h3>
+            
             </>
         )
     }

@@ -38,7 +38,6 @@ function App() {
   return (
     <div>
       <NavBar/>
-      <AxiosAwaitAsync/>
       <UserDetails/>
       {/* Welcome to Online Training : <Emp empname="John"></Emp> */}
      <Routes>
@@ -55,6 +54,7 @@ function App() {
       <Route path="props" element={<Emp empname="John" empid="100" empdesignation="Admin"></Emp>}></Route>
       <Route path="*" element={<PageNotFound/>}></Route>
      </Routes>
+     {/* <AxiosAwaitAsync/> */}
      <footer>
       <nav className='navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-bottom' style={{marginTop:500}}>
         <Footer/>

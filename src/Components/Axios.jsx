@@ -19,7 +19,7 @@ render()
 {
     return(
         <div className="row">
-            {this.state.details.filter(details=>details.id<19).map(det =>
+            {this.state.details.filter(details=>details.id<15).map(det =>
                 <div className="col" key={det.id}>
                     <div className="card">
                         <div className="card-body">
