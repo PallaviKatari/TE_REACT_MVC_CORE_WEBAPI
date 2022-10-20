@@ -11,7 +11,7 @@ export default class TraineeDetails extends Component
     //componentDidMount() - Mounting Phase -> trainees[] -> filled with https://fakestoreapi.com/users
     componentDidMount()
     {
-        fetch('https://fakestoreapi.com/users').then
+        fetch('https://localhost:7197/api/UserDetails').then
         (
             response=>response.json()
         ).then(trainees=>this.setState({trainees:trainees}))
@@ -23,8 +23,8 @@ export default class TraineeDetails extends Component
             <div>
             {this.state.trainees.map(t=>
             <div key={t.id}>
-            <h3>Name:{t.name.firstname} {t.name.lastname}</h3>
-            <h2>City:{t.address.city}</h2>
+            <h3>Name:{t.name}</h3>
+            <h2>Role:{t.role}</h2>
             <hr></hr>
             </div>
             )}

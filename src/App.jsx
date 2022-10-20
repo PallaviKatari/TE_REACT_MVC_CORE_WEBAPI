@@ -31,37 +31,43 @@ import HookForm from './Components/ReactHookForm';
 import Footer from './Components/Axios';
 //Axios with async and await
 import AxiosAwaitAsync from './Components/AxiosAwaitAsync';
+//.NET CORE API
 import GetCoreAPI from './Components/AxiosCoreAPI';
+//.NET CORE API WITH USEAXIOS
+import UseAxiosAPI from './Components/UseAxios';
 //Configure the routing paths 
-import { Route,Routes } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
+
+//https://react-bootstrap.github.io/components/cards/
 
 function App() {
   return (
     <div>
-      <NavBar/>
-      <UserDetails/>
+      <NavBar />
+      <UserDetails />
       {/* Welcome to Online Training : <Emp empname="John"></Emp> */}
-     <Routes>
-      <Route path="" element={<FuncComp/>}></Route>
-      <Route path="classcom" element={<ClassComp/>}></Route>
-      <Route path="map" element={<Fetch_empdetails/>}></Route>
-      <Route path="lifecycle" element={<LifeCycle/>}></Route>
-      <Route path="spreadsyntax" element={<SpreadSyntax/>}></Route>
-      <Route path="toggle" element={<Toggle/>}></Route>
-      <Route path="rooks" element={<Rooks/>}></Route>
-      <Route path="fetch" element={<FetchAPI/>}></Route>
-      <Route path="form" element={<FormValidator/>}></Route>
-      <Route path="hookform" element={<HookForm/>}></Route>
-      <Route path="getapi" element={<GetCoreAPI/>}></Route>
-      <Route path="props" element={<Emp empname="John" empid="100" empdesignation="Admin"></Emp>}></Route>
-      <Route path="*" element={<PageNotFound/>}></Route>
-     </Routes>
-     {/* <AxiosAwaitAsync/> */}
-     <footer>
-      <nav className='navbar fixed-bottom navbar-light bg-light' style={{marginTop:100}}>
-        <Footer/>
-      </nav>
-     </footer>
+      <Routes>
+        <Route path="" element={<FuncComp />}></Route>
+        <Route path="classcom" element={<ClassComp />}></Route>
+        <Route path="map" element={<Fetch_empdetails />}></Route>
+        <Route path="lifecycle" element={<LifeCycle />}></Route>
+        <Route path="spreadsyntax" element={<SpreadSyntax />}></Route>
+        <Route path="toggle" element={<Toggle />}></Route>
+        <Route path="rooks" element={<Rooks />}></Route>
+        <Route path="fetch" element={<FetchAPI />}></Route>
+        <Route path="form" element={<FormValidator />}></Route>
+        <Route path="hookform" element={<HookForm />}></Route>
+        <Route path="getapi" element={<GetCoreAPI />}></Route>
+        <Route path="useaxios" element={<UseAxiosAPI />}></Route>
+        <Route path="props" element={<Emp empname="John" empid="100" empdesignation="Admin"></Emp>}></Route>
+        <Route path="*" element={<PageNotFound />}></Route>
+      </Routes>
+      {/* <AxiosAwaitAsync/> */}
+      <footer>
+        <nav className='navbar fixed-bottom navbar-light bg-light' style={{ marginTop: 100 }}>
+          <Footer />
+        </nav>
+      </footer>
     </div>
   );
 }

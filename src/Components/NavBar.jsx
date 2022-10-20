@@ -47,6 +47,9 @@ export default function NavBar() {
                 <li className="nav-item">
                     <Link className="nav-link" to="getapi">.NET API</Link>
                 </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="useaxios">USEAXIOS</Link>
+                </li>
             </ul>
         </nav>
     )
