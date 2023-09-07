@@ -28,8 +28,9 @@ const Get = () => {
     fetchdata()
   }, [])
   const fetchdata = async () => {
-    //https://localhost:7126/api/Registrations
-    const response = await axios.get("https://localhost:7126/api/Registrations");
+    //https://localhost:7126/api/Registrations //.NET CORE WEB API
+    //https://localhost:44300/api/registrations2 //.NET WEB API
+    const response = await axios.get("https://localhost:44300/api/registrations2");
     setData(response.data)
   }
 
