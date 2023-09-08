@@ -37,7 +37,8 @@ import GetCoreAPI from './Components/AxiosCoreAPI';
 import UseAxiosAPI from './Components/UseAxios';
 //Configure the routing paths 
 import { Route, Routes} from 'react-router-dom';
-
+//MVC - WEB API 
+import Login from './Components/Login_Register_MVC_WebAPI/Login';
 //https://react-bootstrap.github.io/components/cards/
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       {/* Welcome to Online Training : <Emp empname="John"></Emp> */}
       <Routes>
         <Route path="" element={<FuncComp />}></Route>
+        <Route path="login" element={<Login />}></Route>
         <Route path="classcom" element={<ClassComp />}></Route>
         <Route path="map" element={<Fetch_empdetails />}></Route>
         <Route path="lifecycle" element={<LifeCycle />}></Route>

@@ -12,6 +12,9 @@ export default function NavBar() {
                     <img alt="logo" src={logo} style={{ height: 50, width: 50, padding: 10 }}></img>
                 </li>
                 <li className="nav-item">
+                    <Link className="nav-link" to="login">MVC_Login_API</Link>
+                </li>
+                <li className="nav-item">
                     <Link className="nav-link" to="">Functional Component</Link>
                 </li>
                 <li className="nav-item">
