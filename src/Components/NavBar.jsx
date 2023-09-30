@@ -53,6 +53,9 @@ export default function NavBar() {
                 <li className="nav-item">
                     <Link className="nav-link" to="useaxios">USEAXIOS</Link>
                 </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="emplist">ImageUpload</Link>
+                </li>
             </ul>
         </nav>
     )

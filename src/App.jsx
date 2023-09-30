@@ -40,6 +40,7 @@ import { Route, Routes} from 'react-router-dom';
 //MVC - WEB API 
 import Login from './Components/Login_Register_MVC_WebAPI/Login';
 //https://react-bootstrap.github.io/components/cards/
+import EmployeeList from './Components/ImageUpload/EmployeeList';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
       <Routes>
         <Route path="" element={<FuncComp />}></Route>
         <Route path="login" element={<Login />}></Route>
+        <Route path="emplist" element={<EmployeeList />}></Route>
         <Route path="classcom" element={<ClassComp />}></Route>
         <Route path="map" element={<Fetch_empdetails />}></Route>
         <Route path="lifecycle" element={<LifeCycle />}></Route>
