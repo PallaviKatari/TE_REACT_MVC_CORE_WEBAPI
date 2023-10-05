@@ -11,8 +11,10 @@ export default function EmployeeList() {
     refreshEmployeeList();
   }, []);
 
-  const employeeAPI = (url = "https://localhost:44388/api/Employee/") => {
-    return {
+  //APIKEY AUTHORIZATION - React_ImageUpload_Core_API Repository - .NET Core API - API Keys - Query Params
+  //const employeeAPI = (url = "https://localhost:44388/api/Employee?XApiKey=pgH7QzFHJx4w46fI~5Uzi4RvtTwlEXp") => {
+    const employeeAPI = (url = "https://localhost:44388/api/Employee") => {
+  return {
       fetchAll: () => axios.get(url),
       create: (newRecord) => axios.post(url, newRecord),
       update: (id, updatedRecord) => axios.put(url + id, updatedRecord),

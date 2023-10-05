@@ -43,6 +43,7 @@ import Login from './Components/Login_Register_MVC_WebAPI/Login';
 import EmployeeList from './Components/ImageUpload/EmployeeList';
 
 function App() {
+  console.log("App Initialized");
   return (
     <div>
       <NavBar />
